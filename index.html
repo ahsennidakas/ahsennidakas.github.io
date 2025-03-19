@@ -3,49 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <ahsennidakas>My GitHub Page</ahsennidakas>
-</head>
-     <style>
+    <title>My Personal Website</title>
+    <style>
+        /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
-        }
-           header {
-            background-color: #333;
+            background-color: #6a1b9a; /* Purple background color */
             color: white;
-            text-align: center;
-            padding: 40px;
         }
-        .section {
+
+        /* Header Section */
+        header {
+            text-align: center;
             padding: 50px;
+            background-color: #4a148c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main container */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        /* Section titles */
+        h2 {
             text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #fff;
         }
-        .section:nth-child(even) {
-            background-color: #f4f4f4;
-        }
-        .skills {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .skill {
-            background-color: #333;
-            color: white;
+
+        /* Styling for About, Contact, and Code sections */
+        .section {
+            margin-bottom: 40px;
             padding: 20px;
+            background-color: #7b1fa2;
             border-radius: 10px;
-            width: 200px;
         }
+
+        .section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        /* Code box styling */
+        .code-box {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            color: #333;
+            font-family: 'Courier New', monospace;
+        }
+
+        .code-box pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Contact section styling */
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #d32f2f;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contact a:hover {
+            background-color: #c2185b;
+        }
+
+        /* Footer Section */
         footer {
-            background-color: #333;
+            background-color: #4a148c;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
+</head>
 <body>
-    <h1>Hello!</h1>
-    <p>Welcome to my website!</p>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Personal Website</h1>
+        <p>Welcome! This is a page where I introduce myself, share my projects, and provide my contact information.</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Me Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <img src="github.jpg" alt="Your Photo" />
+            <p>Hello, I am Ahsen Nida Kas. I am a student in Electrical and Electronics Engineering Department in Hacettepe University. I love learning new things and building projects. On this site, I share my projects and code examples.</p>
+       </div>
+            <!-- Code Section -->
+        <div class="section">
+            <h2>Code Examples</h2>
+            <div class="code-box">
+                <h3>HTML Example</h3>
+                <pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello World&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, HTML World!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+
+            <div class="code-box">
+                <h3>CSS Example</h3>
+                <pre>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+                </pre>
+            </div>
+
+            <div class="code-box">
+                <h3>JavaScript Example</h3>
+                <pre>
+function hello() {
+    alert("Hello, JavaScript World!");
+}
+                </pre>
+            </div>
+
+            <!-- GitHub Link inside the Code Section -->
+            <div class="code-box">
+                <h3>Visit My GitHub</h3>
+                <p>Explore more of my code and repositories on GitHub:</p>
+                <a href="https://github.com/ahsennidakas" target="_blank" style="background-color: #333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Visit My GitHub</a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section contact">
+            <h2>Contact</h2>
+            <p>Feel free to contact me using the button below:</p>
+            <a href="mailto:ahsennidakas@gmail.com">Send Email</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Personal Website</p>
+    </footer>
+
 </body>
 </html>
