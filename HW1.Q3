@@ -7,14 +7,14 @@ int main(void)
 	int size;
 	int homeValue;
 	
-	printf("Enter house popularity:\n");
+	printf("Enter house popularity:");
 	scanf("%d", &popularity);
 	
-	printf("Enter house size:\n");
+	printf("\nEnter house size:");
 	scanf("%d", &size);
 	
 	homeValue = (pow(popularity,3) + pow(size,2)) * 10000;
-	printf("Home value is: %d\n", homeValue);
+	printf("\nHome value is: %d\n", homeValue);
 	
 	return(0);
 }
